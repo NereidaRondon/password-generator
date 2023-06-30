@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    background: #04080d;
+    font-family: sans-serif;
+}
+#main-container{
+    background: #0f2033;
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+    display:block;
+}
+#generate-container{
+    background: #0f2033;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 0 2rem 0;
+    display:flex;
+    flex-direction: column;
+    border-bottom: 2px solid #17304d;
+}
+h1{
+    font-family: 'Franklin Gothic', Arial, sans-serif; 
+    font-weight: 800;
+    text-shadow: 1.5px 1px 2px black;
+    color: white;
+    margin-bottom:0;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+}
+.green-h1{
+    color:#1fab57;
+}
+p {
+    color: #D5D4D8;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+#length-div{
+    margin-top: 3rem;
+}
+#password-length{
+    font-size: 16px;
+    margin: 1rem 2px 1rem 0;
+    width: 50px;
+    font-family: sans-serif;
+    background: #04080d;
+    color: #D5D4D8;
+    padding: 2px 0;
+    border: none;
+    border-radius: 5px;
+}
+label {
+    color: #D5D4D8;
+    font-size: 16px;
+}
+button{
+    background: #1fab57;
+    padding: 12px 5px;
+    width: 200px;
+    margin: 1rem 0;
+    border: 1px solid #1fab57;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    text-shadow: 1.5px 1px 2px black;
+    filter:drop-shadow(3px 2px 4px black);
+    font-family: sans-serif;
+}
+button:hover{
+    background: #04471f;
+}
+#alert-msg{
+    visibility: hidden;
+    background: #1fab57;
+    color: #D5D4D8;
+    font-size: 16px;
+    width: 55px;
+    padding: 6px 5px 6px 9px;
+    border-radius: 5px;
+    z-index: 5;
+    display:block;
+    margin: 1rem auto 0 auto;
+    transition: all 50ms ease-in-out;
+    text-shadow: 1px 1px 2px #000000;
+}
+#password-container{
+    background: #0f2033;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 1rem  auto;
+    padding: 0 0 2rem 0;
+    display:flex;
+    flex-wrap: wrap;
+}
+.password-divs{
+    background: #17304d;
+    width: 270px; 
+    margin-bottom:1rem;
+    border-radius: 5px;
+    text-shadow: 1.5px 1px 2px black;
+    display:flex;
+    justify-content: space-between;
+    height: 40px;
+    border: 1px solid  #295588;
+}
+.password-divs:hover{
+    border: 1px solid #1fab57;
+    filter: drop-shadow(0px 0px 4px #1fab57);
+}
+.password-divs > p {
+    color:#1fab57;
+    margin:0;
+    padding: 10px 5px;
+    font-size: 18px;
+}
+.icon{
+    padding-right: 7px;
+    margin: 0;
+    width: 12px;
+    height:auto;
+    filter: invert(33%) sepia(9%) saturate(3435%) hue-rotate(172deg) brightness(95%) contrast(91%);
+}
+
+
+@media only screen and (max-width: 700px){
+    #password-container{
+        justify-content: space-around;
+    }
+    #main-container{      
+        max-width: 500px;
+        margin: 1rem auto;
+    }
+}
+@media only screen and (max-width: 400px){
+
+    #main-container{      
+        margin: 0;
+        padding: 0 .5rem;
+    }
+}
